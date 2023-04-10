@@ -16,6 +16,8 @@ React를 공부하면서 따로 정리해 놓는 공간
 - react 홈페이지 접속 : https://ko.reactjs.org/
 - 시작하기를 누르고 하단에 '온라인 플레이그라운드'의 Stackblitz
   - PC에 개발환경을 구축하다가 잘 안되면 너무 좌절하지 말고 Stackblitz를 활용해서 실습하자!
+<br>
+
 - PC에 react 개발환경 구축하기
   - 우측 '새로운 React 앱 만들기' 클릭
   - '추천 툴체인'로 이동
@@ -25,4 +27,20 @@ React를 공부하면서 따로 정리해 놓는 공간
   - 아래쪽에 npx create-react-app my-app 라는 명령어를 실행해야 한다
     - 그런데 npx를 실행하려면 nodejs가 깔려있어야 한다
     - 나의 경우는 nodejs가 이미 깔려있어서 위 명령어를 바로 실행했다
+      - nodejs 설치가 필요한 경우 : https://nodejs.org/ko (LTS버전 권장)
+  - 설치후 vscode에서 react-app이라는 폴더를 열었다
+  - 다음 명령어를 실행한다
+    - <strong>npx create-react-app .</strong>
+  - 설치가 완료되면 맨 하단에 Happy hacking! 이라는 문구가 출력된다
+  - 여기서 npm start를 터미널에 입력하고 엔터를 누른다
+    - npm start는 react 개발환경이 실행되면서 코딩을 할수있는 환경이 동작한다
+  - 웹 브라우저가 뜨고 거기에 샘플 react app이 뜬다
+    - react는 기본적으로 3000번 포트를 사용하는데 이미 사용중이라면 실행이 안될것이다
+    - 실행이 안되고 포트번호를 바꿀것이라고 물어보는데 y를 누르면 자동으로 다른포트로 연결된다
+
+<img src="https://user-images.githubusercontent.com/81700507/230902720-90ee22f1-deb2-47bd-aa7c-c788005661ac.png" width="300" height="300">
+ 이런식의 sample react가 뜨면 개발환경 구축은 성공이다!
+<hr><br>
+
+
    

@@ -3,12 +3,12 @@
 # React 자습 공간
 React를 공부하면서 따로 정리해 놓는 공간
 - 참고 자료 : https://www.youtube.com/playlist?list=PLuHgQVnccGMCOGstdDZvH41x0Vtvwyxu7 (생활코딩 React)
-<br>
+<hr><br>
 
 ## 1강 : 수업 소개
 - React를 만드는 방법은 Class,function 두가지 방법이 있다
 - 최근에는 function을 이용해서 React를 만드는 경우가 많아졌다
-- 그래서 생활코딩의 이고잉님은 function을 이용해서 수업을 진행하신다
+- 그래서 생활코딩의 이고잉님은 <ins>function</ins>을 이용해서 수업을 진행하신다
 - 만약 Class방식의 React를 공부하고 싶다면 : https://opentutorials.org/module/4058
 <hr><br>
 

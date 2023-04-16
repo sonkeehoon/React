@@ -47,7 +47,8 @@ React를 공부하면서 따로 정리해 놓는 공간
 
 - React의 폴더 구성
 - src폴더
-  - 입구 파일, npm start로 app을 구동시키면 <ins>index.js</ins>를 가장먼저 찾고 적혀있는 대로 동작한다
+  - index.js는 입구 파일을 의미
+  - npm start로 app을 구동시키면 <ins>index.js</ins>를 가장먼저 찾고 적혀있는 대로 동작한다
   - 중간에 \<App /> 부분은 ./App.js에서 불러온 코드를 실행시킨다
   
 ![image](https://user-images.githubusercontent.com/81700507/232305396-c8aba402-a786-400d-b791-9123013749a7.png)
@@ -68,7 +69,7 @@ React를 공부하면서 따로 정리해 놓는 공간
 2. 배포
 - 기존에 터미널에서 실행중이던 App을 꺼보자(Ctrl+C)
 - 그리고 npm run build 를 실행한다
-  - build는 '배포판을 만드는 과정'을 의미
+  - 여기서 build는 '배포판을 만드는 과정'을 의미
   - 이 명령을 실행하면 build라는 폴더가 생성된다
   - build안의 index.html을 열어보면 공백이 하나도 없다
     - 배포할때는 파일의 용량을 최대한 줄이기 위해서 공백을 다 없앰

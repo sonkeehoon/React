@@ -38,7 +38,7 @@ React를 공부하면서 따로 정리해 놓는 공간
     - react는 기본적으로 3000번 포트를 사용하는데 이미 사용중이라면 실행이 안될것이다
     - 실행이 안되고 포트번호를 바꿀것이라고 물어보는데 y를 누르면 자동으로 다른포트로 연결된다
 
-<img src="https://user-images.githubusercontent.com/81700507/230902720-90ee22f1-deb2-47bd-aa7c-c788005661ac.png" width="200" height="200">
+<img src="https://user-images.githubusercontent.com/81700507/230902720-90ee22f1-deb2-47bd-aa7c-c788005661ac.png" width="250" height="250">
  이런식의 sample react 웹페이지를 띄웠으면 개발환경 구축은 성공이다!
 <hr><br>
 

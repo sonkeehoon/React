@@ -66,7 +66,8 @@ React를 공부하면서 따로 정리해 놓는 공간
 ![image](https://user-images.githubusercontent.com/81700507/232306480-a1bec6de-0835-41cd-809e-8a31c2caf1e1.png)
   - index.css또한 화면에 뜨는 페이지에 영향을준다
   - 이고잉 강사님은 index.css을 비워서 기본적으로 샘플 앱에서 사용하는 css를 초기화 시켜서 깔끔한 상태로 시작하셨고 나도 따라했다
-  
+<br>
+
 2. 배포
 - 기존에 터미널에서 실행중이던 App을 꺼보자(Ctrl+C)
 - 그리고 npm run build 를 실행한다

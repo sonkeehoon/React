@@ -45,10 +45,11 @@ React를 공부하면서 따로 정리해 놓는 공간
 ## `3강` : 소스코드 수정방법
 1. 수정
 
-- React의 폴더 구성
-- src폴더
+- src폴더의 구성
   - index.js는 입구 파일을 의미
   - npm start로 app을 구동시키면 <ins>index.js</ins>를 가장먼저 찾고 적혀있는 대로 동작한다
+
+![image](https://user-images.githubusercontent.com/81700507/232308419-fab57757-cb0b-47d0-a765-0e6e5e8458c3.png)
   - 중간에 \<App /> 부분은 ./App.js에서 불러온 코드를 실행시킨다
   
 ![image](https://user-images.githubusercontent.com/81700507/232305396-c8aba402-a786-400d-b791-9123013749a7.png)
@@ -64,7 +65,7 @@ React를 공부하면서 따로 정리해 놓는 공간
   
 ![image](https://user-images.githubusercontent.com/81700507/232306480-a1bec6de-0835-41cd-809e-8a31c2caf1e1.png)
   - index.css또한 화면에 뜨는 페이지에 영향을준다
-  - 이고잉 강사님은 이파일을 비워서 기본적으로 샘플 앱에서 사용하는 css를 초기화 시켜서 깔끔한 상태로 시작하셨고 나도 따라했다
+  - 이고잉 강사님은 index.css을 비워서 기본적으로 샘플 앱에서 사용하는 css를 초기화 시켜서 깔끔한 상태로 시작하셨고 나도 따라했다
   
 2. 배포
 - 기존에 터미널에서 실행중이던 App을 꺼보자(Ctrl+C)

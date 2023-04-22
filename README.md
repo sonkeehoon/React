@@ -45,10 +45,11 @@ React를 공부하면서 따로 정리해 놓는 공간
 ## `3강` : 소스코드 수정방법
 1. 수정
 
-- React의 폴더 구성
-- src폴더
+- src폴더의 구성
   - index.js는 입구 파일을 의미
   - npm start로 app을 구동시키면 <ins>index.js</ins>를 가장먼저 찾고 적혀있는 대로 동작한다
+
+![image](https://user-images.githubusercontent.com/81700507/232308419-fab57757-cb0b-47d0-a765-0e6e5e8458c3.png)
   - 중간에 \<App /> 부분은 ./App.js에서 불러온 코드를 실행시킨다
   
 ![image](https://user-images.githubusercontent.com/81700507/232305396-c8aba402-a786-400d-b791-9123013749a7.png)
@@ -64,8 +65,9 @@ React를 공부하면서 따로 정리해 놓는 공간
   
 ![image](https://user-images.githubusercontent.com/81700507/232306480-a1bec6de-0835-41cd-809e-8a31c2caf1e1.png)
   - index.css또한 화면에 뜨는 페이지에 영향을준다
-  - 이고잉 강사님은 이파일을 비워서 기본적으로 샘플 앱에서 사용하는 css를 초기화 시켜서 깔끔한 상태로 시작하셨고 나도 따라했다
-  
+  - 이고잉 강사님은 index.css을 비워서 기본적으로 샘플 앱에서 사용하는 css를 초기화 시켜서 깔끔한 상태로 시작하셨고 나도 따라했다
+<br>
+
 2. 배포
 - 기존에 터미널에서 실행중이던 App을 꺼보자(Ctrl+C)
 - 그리고 npm run build 를 실행한다
@@ -81,6 +83,96 @@ React를 공부하면서 따로 정리해 놓는 공간
     
 ![image](https://user-images.githubusercontent.com/81700507/232307784-89dad5fa-4e04-4057-9284-328a55278f53.png)   
 <hr><br>
+
+## `4강` : 컴포넌트만들기
+- 4강은 작성중에 <ins>내용이 날라가 버려서(..)</ins> 생략하려고 한다
+- 컴포넌트 만드는건 함수를 선언하는것 처럼 쉽기 때문에 그때그때 찾아보면 될것같다
+
+![image](https://user-images.githubusercontent.com/81700507/233679337-55844467-b61b-4202-8271-79c85f487154.png)
+
+<hr><br>
+
+## `5강` : props
+여기 두종류의 태그가 있다
+
+![image](https://user-images.githubusercontent.com/81700507/233768404-f7a90704-d4ca-487c-bc69-62035fd31795.png)
+- 위쪽(초록색 글씨)은 4강에서 만든 컴포넌트들이고
+- 아래쪽은 HTML태그이다
+  - HTML 태그는 src, width 같은 '속성'을 갖고있다.
+  - 이쯤되면 내가 정의한 컴포넌트에도 '속성'을 부여하고 싶은 욕심이 생긴다
+- React에서 이러한 '속성'들은 '<ins>prop</ins>'라고 부른다
+- Header, Native, Article 컴포넌트에도 prop을 적용해보자
+
+![image](https://user-images.githubusercontent.com/81700507/233768886-0a2d8206-ad67-4bc0-a3a6-d4d87e25f410.png)
+- Article 컴포넌트 선언부를 다음과 같이 수정했다
+- 여기서 props.title은 Article태그에 설정된 title 속성값을 가져오고
+- 마찬가지로 props.body는 Article태그에 설정된 body 값을 가져온다
+- 그리고 Article을 사용하는 부분은 이렇게 바꿔준다
+
+![image](https://user-images.githubusercontent.com/81700507/233769038-723dcac9-d262-46f1-8d20-6632aa7afa2d.png)
+- Article 내에서 props.title을 하면 "Welcome"이라는 문자열을 불러오고
+- props.body를 하면 "Hello, WEB"라는 문자열을 불러온다
+- 불러올때 주의할점은 { }로 감싸줘야 한다는 점
+  - ex) {props.body}
+- 동일한 원리로 Header도 수정하면 된다 (설명 생략)
+- 그런데 Nav는 수정하는 방법이 조금 다르다
+  - 우선 App()안에 topics라는 상수를 선언하고 값을 넣는다
+  
+  ![image](https://user-images.githubusercontent.com/81700507/233769594-ec1e1c99-2e5e-4652-afa2-bce3daa65a86.png)
+  - 그리고 아래 Nav 사용 부분은 이렇게 변경한다
+  
+  ![image](https://user-images.githubusercontent.com/81700507/233769700-887b8d2f-3b35-4d7c-aa9f-96b4c1cc1cbf.png)
+  - 마지막으로 Nav 안쪽은 이렇게 바꿔서 topics를 받자
+
+  ![image](https://user-images.githubusercontent.com/81700507/233770112-8fae94b4-5603-4a0a-b483-8025189bbb04.png)
+  - for문을 통해서 props.topics라는 객체에 인덱스로 접근한다
+  - 각 요소들을 변수t에 담고 t의 속성들을 href와 태그안의 내용에서 꺼낸다
+  - key={t.id}는 설명이 길어질수 있어서 간단하게만 설명하셨다
+    - React에서 자동으로 생성하는 태그들은 React가 이 태그들을 추적할 근거값으로 key를 준다(각각 고유해야함)
+    - React의 정확한 동작과 성능을 높이기 위해 key값을 주는것 이라고 이해하고 pass하자
+
+어떤값을 주냐에 따라 다르게 동작하는 똑똑한 컴포넌트를 props 덕분에 만들수 있었다
+
+<hr><br>
+
+## `6강` : 이벤트
+
+![image](https://user-images.githubusercontent.com/81700507/233770620-690014e7-5a9e-4963-a263-8a9e12449e91.png)
+- 우리가 만든 컴포넌트에는 아직 이벤트 기능은 없다
+  - 여기서 이벤트는 클릭했을때 알림창을 띄워주는 등의 이벤트를 의미
+- 컴포넌트에 이벤트를 넣는법을 배워보자
+- App()의 Header 부분에 알림창 띄우는 이벤트를 넣기위해 이렇게 수정했다
+
+![image](https://user-images.githubusercontent.com/81700507/233771163-8d6d0c4e-a4ed-496c-9539-77de860978f6.png)
+- Header태그에 showAlert(임의의 이름)이라는 함수가 담긴 prop을 준다
+- Header 안에서는 이것을 props.showAlert();로 호출한다
+
+![image](https://user-images.githubusercontent.com/81700507/233771479-039c3398-649f-4776-9936-63d87786a8ae.png)
+- Header 안에서 함수를 호출할때는 기존 HTML에서 썼던 onClick="showAlert();" 이런 방식은 못쓴다
+- onClick={function(event){ }}이런 구조로 컴포넌트의 함수형 prop을 받아줘야 함
+- Header 태그를 클릭해보면 다음과 같은 알림이 뜬다
+
+![image](https://user-images.githubusercontent.com/81700507/233772008-89f2f8de-4a37-4dc5-b857-d0e00f5f25a7.png)
+- 컴포넌트에 이벤트 삽입 완료!
+- Tip
+  - function 키워드 대신 이렇게 써도됨
+  
+  ![image](https://user-images.githubusercontent.com/81700507/233772128-6c833e10-6b6b-46fb-aebd-aa5b51a26c75.png)
+
+- Nav태그도 id값을 인자로 준다는점 외에는 동일하다
+
+![image](https://user-images.githubusercontent.com/81700507/233772649-0f7f051a-aa35-421a-9f85-3ef02dd6fd9a.png)
+- Nav내부 처리
+
+![image](https://user-images.githubusercontent.com/81700507/233772751-407846cb-1fde-4820-8acc-053fb2a1923c.png)
+- id 값을 받기위해 id={t.id}
+- 현재 이벤트를 호출한 a태그(나자신)의 id값을 불러오려면 event.target.id
+
+  ![image](https://user-images.githubusercontent.com/81700507/233772815-23987311-902b-4ca4-aa01-178644eef9ab.png)
+- html을 클릭하면 1, css는 2, javascript는 3이라는 알림창을 띄운다
+
+<hr><br>
+
 
 
 

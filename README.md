@@ -173,6 +173,52 @@ React를 공부하면서 따로 정리해 놓는 공간
 
 <hr><br>
 
+## `7강` : state
+- state는 prop과 비교되는 (헷갈리는) 개념이다
+  ![image](https://user-images.githubusercontent.com/81700507/233967382-d80f54b5-65d7-43ba-8ef2-2930862ea3dd.png)
+
+
+- prop과 state의 공통점 : 이 값이 변경되면 새로운 return값을 만들어서 UI를 바꿔준다
+- prop과 state의 차이점
+- prop
+  - 컴포넌트를 사용하는 외부자를 위한 데이터
+- state
+  - 컴포넌트를 만드는 내부자를 위한 데이터
+
+- state 사용하기
+  - 우선 위쪽에 useState를 import 해줘야한다
+  
+    ![image](https://user-images.githubusercontent.com/81700507/233971127-7fa74c93-8731-4b7b-a860-38c247240978.png)
+  - App 내부에서 useState를 호출하기 하고 변수들에 담는다
+  
+  ![image](https://user-images.githubusercontent.com/81700507/233972155-6bbc48e9-fc28-4b5f-912f-ebf3f38ec229.png)
+  - A와 B는 같은의미다. 한줄로 축약할수 있는 B방식을 잘 기억해 두자
+  - 여기서 mode는 상태를 나타내는 변수, setMode는 mode의 값을 바꿔주는 함수를 의미한다
+  - 그리고 아래 return값은 이렇게 바꿔준다
+    
+    ![image](https://user-images.githubusercontent.com/81700507/233977390-3bd32d2e-3bf8-4c32-827a-da6a902f099f.png)
+    - setMode가 호출되면 App 컴포넌트가 재실행 된다
+    - 재실행후 바뀐 값을 새로운 mode변수에 집어넣고 실행한다
+  - Read가 아닌 각각의 요소에 맞는 title과 body가 나오게끔 만들어보자
+  - 두개의 변수 id, setId를 추가한다
+  
+    ![image](https://user-images.githubusercontent.com/81700507/233981844-0ef6b08b-898d-4118-8cd4-61bb399a2b2f.png)
+  - 변수에 현재 클릭한 topic의 title과 body를 읽어와야 한다
+  - 반복문으로 0번부터 topics를 검사하고 현재 선택한 topic과 일치하면 title, body에 할당
+  
+    ![image](https://user-images.githubusercontent.com/81700507/233996004-d503fc0f-48be-48c3-8b31-f49d3f0b7912.png)
+  - content 변수에 Article을 할당
+  
+    ![image](https://user-images.githubusercontent.com/81700507/233996142-b6b28038-4d49-4a24-9ddb-1174e02a01b4.png)
+  - Nav 컴포넌트에서 setId state를 호출한다
+  
+    ![image](https://user-images.githubusercontent.com/81700507/233998949-481923dc-d461-41a2-9a1c-1b87b080cd4e.png)
+  - 마지막으로 Nav 함수 내에서 Number로 형변환 해주면 끝
+  
+  ![image](https://user-images.githubusercontent.com/81700507/234004587-d2f66b34-5df1-411e-84aa-2ec3f57436b9.png)
+
+<hr><br>
+
 
 
 

@@ -60,7 +60,7 @@ React를 공부하면서 따로 정리해 놓는 공간
   
 ![image](https://user-images.githubusercontent.com/81700507/232305800-9add68cb-c30e-4019-b695-0b5e13ed4eea.png)
   - 바로 현재 폴더의 App.css의 영향을 받는다
-  - 우리가 보고있는 페이지의 디자인을 수정하려면 App.css의 내용을 수정하면 됨!
+  - <strong>우리가 보고있는 페이지의 디자인을 수정하려면 App.css의 내용을 수정하면 됨!</strong>
   - 그런데 index.js에도 index.css를 불러온다 이것은 뭘까?
   
 ![image](https://user-images.githubusercontent.com/81700507/232306480-a1bec6de-0835-41cd-809e-8a31c2caf1e1.png)

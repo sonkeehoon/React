@@ -60,7 +60,7 @@ React를 공부하면서 따로 정리해 놓는 공간
   
 ![image](https://user-images.githubusercontent.com/81700507/232305800-9add68cb-c30e-4019-b695-0b5e13ed4eea.png)
   - 바로 현재 폴더의 App.css의 영향을 받는다
-  - 우리가 보고있는 페이지의 디자인을 수정하려면 App.css의 내용을 수정하면 됨!
+  - <strong>우리가 보고있는 페이지의 디자인을 수정하려면 App.css의 내용을 수정하면 됨!</strong>
   - 그런데 index.js에도 index.css를 불러온다 이것은 뭘까?
   
 ![image](https://user-images.githubusercontent.com/81700507/232306480-a1bec6de-0835-41cd-809e-8a31c2caf1e1.png)
@@ -91,7 +91,6 @@ React를 공부하면서 따로 정리해 놓는 공간
 ![image](https://user-images.githubusercontent.com/81700507/233679337-55844467-b61b-4202-8271-79c85f487154.png)
 
 <hr><br>
-
 ## `5강` : props
 여기 두종류의 태그가 있다
 
@@ -216,6 +215,67 @@ React를 공부하면서 따로 정리해 놓는 공간
   - 마지막으로 Nav 함수 내에서 Number로 형변환 해주면 끝
   
   ![image](https://user-images.githubusercontent.com/81700507/234004587-d2f66b34-5df1-411e-84aa-2ec3f57436b9.png)
+
+<hr><br>
+
+## `8강` : Create
+![image](https://github.com/sonkeehoon/React/assets/81700507/4d477381-295c-4ea0-a3f7-349df47a536f)
+- 어플리케이션의 4대 기능인 CRUD
+- Read는 앞에서 구현을 해봤고, 이제는 <ins>Create</ins>기능을 구현해 보려고한다
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/d96d150d-8a8c-4cbe-a4d8-a7c5a5120507)
+- 3번항목 아래 4번항목을 추가하는 기능이 <ins>Create</ins>이다
+
+- 우선 Create라는 링크를 추가해보자
+- app.js에서 app()함수의 return값을 수정하자
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/fd2f1bea-33e2-4549-9ac3-6feb155edda7)
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/c0ec1f8d-bafb-4486-950b-c5850e32e9ac)
+- 웹페이지에 Create라는 링크가 추가됐다
+- 클릭시 발생하는 이벤트도 만들어주자
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/aea6da98-9536-4d1f-a27d-ffa660722e1b)
+- 이제 App() 내부의 if문에 mode가 CREATE인 경우를 추가해주자
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/70671569-2666-4297-8232-33016e74396d)
+- 여기서 content에 Create라는 별도의 컴포넌트를 넣으려고 한다.
+- 그러기 위해선 Create라는 컴포넌트를 먼저 선언해보자
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/5c576d4d-55bb-4269-80fb-2b8e37729a05)
+- 다음과 같은 폼이 생성된다
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/816910bf-83ab-4318-900e-fcb932e26327)
+- 이제 mode값이 Create인 경우에 발생하는 이벤트 onCreate를 정의해보자
+- form 태그에 onSubmit 이벤트를 만들려고한다 (submit버튼 클릭시 발생하는 이벤트)
+- 그런데 이 이벤트가 발생하면 페이지가 reload 되버린다(기본 기능)
+- 이걸 막기 위해서 또다시 event.preventDefault()도 추가해줘야 한다
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/6577600d-1048-404e-a501-5c24061234ab)
+- 그 다음 입력한 title과 body가 topics에 추가되게 하자
+- 강의 내용이 상당히 복잡해서 우선은 코드랑 결과만 올려놓으려고 한다
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/e59a923b-8d71-4729-a92c-a6c5c4f7a934)
+- 최종적으로 이렇게 바꾸면 된다고 한다
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <hr><br>
 

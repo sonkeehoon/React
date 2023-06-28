@@ -234,7 +234,18 @@ React를 공부하면서 따로 정리해 놓는 공간
 
 ![image](https://github.com/sonkeehoon/React/assets/81700507/c0ec1f8d-bafb-4486-950b-c5850e32e9ac)
 - 웹페이지에 Create라는 링크가 추가됐다
-- 이제
+- 클릭시 발생하는 이벤트도 만들어주자
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/aea6da98-9536-4d1f-a27d-ffa660722e1b)
+- 이제 App() 내부의 if문에 mode가 CREATE인 경우를 추가해주자
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/70671569-2666-4297-8232-33016e74396d)
+- 여기서 content에 Create라는 별도의 컴포넌트를 넣으려고 한다.
+- 그러기 위해선 Create라는 컴포넌트를 먼저 선언해보자
+
+
+
+
 
 
 

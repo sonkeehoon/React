@@ -243,6 +243,16 @@ React를 공부하면서 따로 정리해 놓는 공간
 - 여기서 content에 Create라는 별도의 컴포넌트를 넣으려고 한다.
 - 그러기 위해선 Create라는 컴포넌트를 먼저 선언해보자
 
+![image](https://github.com/sonkeehoon/React/assets/81700507/5c576d4d-55bb-4269-80fb-2b8e37729a05)
+- 다음과 같은 폼이 생성된다
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/816910bf-83ab-4318-900e-fcb932e26327)
+- 다시 content로 돌아가서
+- mode가 Create인 경우에 발생하는 이벤트 onCreate를 정의하려고한
+- form 태그는
+
+
+
 
 
 

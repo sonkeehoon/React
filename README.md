@@ -91,7 +91,6 @@ React를 공부하면서 따로 정리해 놓는 공간
 ![image](https://user-images.githubusercontent.com/81700507/233679337-55844467-b61b-4202-8271-79c85f487154.png)
 
 <hr><br>
-
 ## `5강` : props
 여기 두종류의 태그가 있다
 
@@ -247,9 +246,25 @@ React를 공부하면서 따로 정리해 놓는 공간
 - 다음과 같은 폼이 생성된다
 
 ![image](https://github.com/sonkeehoon/React/assets/81700507/816910bf-83ab-4318-900e-fcb932e26327)
-- 다시 content로 돌아가서
-- mode가 Create인 경우에 발생하는 이벤트 onCreate를 정의하려고한
-- form 태그는
+- 이제 mode값이 Create인 경우에 발생하는 이벤트 onCreate를 정의해보자
+- form 태그에 onSubmit 이벤트를 만들려고한다 (submit버튼 클릭시 발생하는 이벤트)
+- 그런데 이 이벤트가 발생하면 페이지가 reload 되버린다(기본 기능)
+- 이걸 막기 위해서 또다시 event.preventDefault()도 추가해줘야 한다
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/6577600d-1048-404e-a501-5c24061234ab)
+- 그 다음 입력한 title과 body가 topics에 추가되게 하자
+- 강의 내용이 상당히 복잡해서 우선은 코드랑 결과만 올려놓으려고 한다
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/e59a923b-8d71-4729-a92c-a6c5c4f7a934)
+- 최종적으로 이렇게 바꾸면 된다고 한다
+
+
+
+
+
+
+
+
 
 
 

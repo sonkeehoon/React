@@ -258,6 +258,61 @@ React를 공부하면서 따로 정리해 놓는 공간
 ![image](https://github.com/sonkeehoon/React/assets/81700507/e59a923b-8d71-4729-a92c-a6c5c4f7a934)
 - 최종적으로 이렇게 바꾸면 된다고 한다
 
+<hr><br>
+
+## `9강` : Update
+- 이번엔 Update를 구현해보자
+![image](https://github.com/sonkeehoon/React/assets/81700507/d4f4c6d7-2552-4905-b637-9af083d17bd6)
+- Update는 Create와 Read의 hybrid해서 만든다
+- 우선 Create링크 아래 Update링크를 만들기 위해
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/6c838c19-fe23-4941-9846-10f72f0227ff)
+- 두 링크를 각각 li태그로 묶고 전체를 ul(순서 없는 태그)로 묶었다
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/ffd0c695-771a-4e77-9ab7-1bde004cf7ff)
+- 다음과 같은 결과를 얻었다
+- 그런데 Update는 첫페이지(내용 선택을 안한 상태)에서는 보일 필요가 없다
+- mode 값이 'READ'일때만 보이게 하면 될것같다
+- Update를 상세 페이지 안에서만 보이게 해보자
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/0c1e5a12-d42f-4e5c-a14d-109a52a694ca)
+- 아까 만든 update가 포함된 li태그 한줄을 cut+copy(ctrl+x)하자
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/3cea98c3-475c-4155-81b5-9f03fdd5521f)
+- contextControl이라는 지역변수를 하나 만들고 mode가 READ인 부분으로 가서
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/dc3f3c08-5775-4cfe-864c-f46587fae1e6)
+- contextControl 변수에 아까 복사해둔 li태그를 집어넣자
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/491f4217-44ac-42e6-b629-6c5fc095ccbc)
+- 다시 ul태그 안에 아까 만든 변수를 집어넣자
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/b3ee8c14-8333-4049-8330-d13060cf3092)
+- 첫페이지에서 Update가 사라졌고
+- 상단에 html, css, javascript를 눌렀을때만 Update가 나타난다
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/06fd5fc6-4904-4421-ae47-bd80f677ad37)
+- 아까 수정한 contextControl을 이렇게 수정하자
+  - href에 id값을 추가했다
+  - onClick이벤트를 추가했다
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

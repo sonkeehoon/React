@@ -296,6 +296,42 @@ React를 공부하면서 따로 정리해 놓는 공간
   - href에 id값을 추가했다
   - onClick이벤트를 추가했다
 
+<hr><br>
+
+## `10강` : Delete & 수업을 마치며
+- 마지막으로 Delete를 구현하고 마무리를 지어보자
+![image](https://github.com/sonkeehoon/React/assets/81700507/51cac821-a398-4934-88eb-9dda7149a12b)
+![image](https://github.com/sonkeehoon/React/assets/81700507/c44e2066-a610-4089-b610-c84674808df4)
+- 기존의 Update 밑에 삭제기능을 하는 Delete 버튼을 만들어보자
+  - Create와 Update는 클릭시에 어떤 페이지로 이동하는 링크였다
+  - 하지만 Delete는 누르자마자 삭제시켜 버릴것이기 때문에 <ins>링크가 아닌 버튼</ins>으로 만들것이다
+
+- Delete버튼도 어떤 topic을 클릭했을때만 보여야 하기 때문에 Update와 마찬가지로 ContextControl 변수에 집어넣자
+![image](https://github.com/sonkeehoon/React/assets/81700507/97d05d83-5874-4481-bd15-052f3f1b2c91)
+- 주황색 부분이 새로 추가된 부분이고 주황색이 아닌 부분은 원래 있던 Update 기능이다
+- 맨아래<>와 맨위의 </>
+  - 아마 react에서 변수안에 같은 \<li> 태그를 2개이상 집어넣을때 하나로 묶어주는 그런 도구인것 같다
+  - <>와 </>없이 그냥 두개의 \<li>태그만 넣으면 에러가 난다 (2개 이상일때는 꼭 해줘야함)
+- 주황색 부분
+  - 기존에 Topics에 있던 topic들의 id값에 for문을 돌린다
+  - 현재 선택중인 id값과 다르면 그 topic값은 newTopics라는 변수에 추가한다
+  - 이렇게하면 현재 선택된 topic을 제외한 나머지 topic들이 그대로 newTopics에 들어가기 때문에 Delete된다고 볼수있다
+  
+- Delete는 성공했고 그 다음 초기화면(mode값이'WELCOME')으로 이동시키면 마무리된다
+
+![image](https://github.com/sonkeehoon/React/assets/81700507/3f1781a9-b44d-4f7e-98e4-7ce9d6565585)
+
+`마무리 2023-07-04`
+- 여기까지 기본적인 CRUD를 react로 구현해봤다
+- Update기능은 양도 많고 이해못하고 넘어간 부분이 좀 있어서 아쉬웠다
+- react를 더 공부하고 싶다면 이 링크로 가보자 https://seomal.com/map/1/220
+
+
+
+
+
+ 
+
   
 
   

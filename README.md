@@ -3,6 +3,7 @@
 # React기초
 React를 공부하면서 따로 정리해 놓는 공간
 - 참고 자료 : https://www.youtube.com/playlist?list=PLuHgQVnccGMCOGstdDZvH41x0Vtvwyxu7 (생활코딩 React)
+- 선수 과목 : javascript
 <hr><br>
 
 ## `1강` : 수업 소개
